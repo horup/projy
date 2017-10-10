@@ -1,5 +1,6 @@
 require("bootstrap/dist/css/bootstrap.css");
 require('react-datetime/css/react-datetime.css')
+require("vis/dist/vis.css");
 require("./style.css");
 import { Container } from 'reactstrap';
 import { HashRouter } from 'react-router-dom';

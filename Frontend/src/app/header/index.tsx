@@ -8,13 +8,7 @@ export default class Header extends React.Component<any, any>
         return (
             <Nav>
                 <NavItem>
-                    <NavLink href="#/">Home</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="#/forms">Forms</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="#/charts">Charts</NavLink>
+                    <NavLink href="#/">Timeline</NavLink>
                 </NavItem>
             </Nav>
         )
