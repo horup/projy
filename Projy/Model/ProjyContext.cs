@@ -29,6 +29,7 @@ namespace Projy.Model
          {
             {
                var proj = new Project();
+               proj.Color = "#FF0000";
                c.Projects.Add(proj);
                proj.Name = "FOX 3.5.0";
                {
@@ -36,6 +37,7 @@ namespace Projy.Model
                   e.Name = "Final Release";
                   e.Timestamp = DateTime.UtcNow.AddMonths(3);
                   e.Project = proj;
+                  e.Description = string.Empty;
                   c.Events.Add(e);
                }
                { 
@@ -43,6 +45,7 @@ namespace Projy.Model
                   e.Name = "House Testing";
                   e.Timestamp = DateTime.UtcNow.AddMonths(2);
                   e.Project = proj;
+                  e.Description = string.Empty;
                   c.Events.Add(e);
 
                }
@@ -51,6 +54,7 @@ namespace Projy.Model
                   e.Name = "System Testing";
                   e.Timestamp = DateTime.UtcNow.AddMonths(1);
                   e.Project = proj;
+                  e.Description = string.Empty;
                   c.Events.Add(e);
                }
                {
@@ -58,12 +62,14 @@ namespace Projy.Model
                   e.Name = "Implementation Finished";
                   e.Timestamp = DateTime.UtcNow.AddMonths(-1);
                   e.Project = proj;
+                  e.Description = string.Empty;
                   c.Events.Add(e);
                }
             }
 
             {
                var proj = new Project();
+               proj.Color = "#00FF00";
                c.Projects.Add(proj);
                proj.Name = "ProGrow 1.1";
                {
@@ -71,6 +77,7 @@ namespace Projy.Model
                   e.Name = "Innovent Visit";
                   e.Timestamp = DateTime.Parse("2017-9-1");
                   e.Project = proj;
+                  e.Description = "Talk about IMX vs X86\nTalk about Halcon vs Custom\nGet Commitment.";
                   c.Events.Add(e);
                }
                {
@@ -78,8 +85,8 @@ namespace Projy.Model
                   e.Name = "Release";
                   e.Timestamp = DateTime.Parse("2018-9-1");
                   e.Project = proj;
+                  e.Description = "Improved algorithm\nIMX support\nMore keyvalues in FOX.";
                   c.Events.Add(e);
-
                }
             }
 

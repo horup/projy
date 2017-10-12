@@ -11,5 +11,7 @@ namespace Projy.Model
       public string Name { get; set; }
 
       public ICollection<Event> Events { get; set; }
+
+      public string Color { get; set; }
    }
 }
